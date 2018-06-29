@@ -1,0 +1,5 @@
+<ul class='list'>
+    {{#each this}}
+    <li data-id='{{chapter_id}}' {{#if ids}}class='active' {{/if}} chapter='{{chapter_count}}'>{{title}}{{#if free}}<span>免费</span>{{/if}}</li>
+    {{/each}}
+</ul>

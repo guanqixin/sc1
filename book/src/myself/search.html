@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/search.css">
+    <script src='../js/lib/require.js'></script>
+    <script>
+        require(['../js/config'], function() {
+            require(['search'])
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="javascript:history.back()" id="top__back"></a>
+            <div class="search-inp">
+                <span></span>
+                <input type="text" class='sea' placeholder="输入书名/作者/关键字">
+                <span class='s'>搜索</span>
+            </div>
+        </header>
+        <section>
+            <div class="init"></div>
+            <div class="search-content"></div>
+        </section>
+    </div>
+</body>
+
+</html>

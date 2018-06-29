@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/swiper.css">
+    <script src='./js/lib/require.js'></script>
+    <script>
+        require(['./js/config'], function() {
+            require(['index'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class='header'>
+            <p>
+                <em></em>
+            </p>
+            <div>
+                <span class='active'>书城</span>
+                <span>书架</span>
+            </div>
+            <p><em></em></p>
+        </header>
+        <main id="main">
+            <div class="content">
+                <div class='book' id='one'>
+                    <div class="box3">
+                        <div class='server'>
+                            <span class='search-book'>
+                              输入书名/作者/关键字
+                            </span>
+                        </div>
+                        <div class="box4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class='book two'>
+                    <div class='server shelf'>
+                        <span class='search-book'>
+                            输入书名/作者/关键字
+                        </span>
+                        <div id='tab' class='active'>
+                        </div>
+                    </div>
+                    <div class="shlf-cont">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

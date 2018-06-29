@@ -1,0 +1,44 @@
+<header>
+    <a href="javascript:history.back()" id="top__back"></a>
+    <div class="search-inp">
+        {{item.title}}
+    </div>
+</header>
+<section>
+    <dl>
+        <dt><img src="{{item.cover}}" alt=""></dt>
+        <dd>
+            <h3>{{item.title}}</h3>
+            <h4>{{item.authors}}</h4>
+            <h5>{{item.score_count}}个评价</h5>
+            <h6>价格:{{item.price}}书币/千字</h6>
+            <h7>字数:{{#word_count item.word_count}}{{/word_count}}万字</h7>
+        </dd>
+    </dl>
+    <div class='read'>
+        <span class='origin' chapter='{{item.chapter_count}}'>开始阅读</span>
+        <span>下载</span>
+    </div>
+    <p class='con'>
+        {{item.content}}
+    </p>
+    <div class="new" chapter_id='{{item.latest_id}}' chapter='{{item.chapter_count}}'>
+        最新：{{item.latest}} 更新于{{#time item.updated}}{{/time}}
+    </div>
+    <div class="else">
+        <h3>类别标签</h3>
+        {{#each item.categories}}
+        <span>{{label}}</span> {{/each}}
+    </div>
+    <div class="else_book">
+        <h3>作者其它图书</h3>
+        <ul>
+            {{#each author_books}}
+            <li>
+                <img src="{{cover}}" alt="">
+                <p>{{title}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

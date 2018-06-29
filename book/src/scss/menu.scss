@@ -1,0 +1,54 @@
+@import 'common.scss';
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:pxTorem(14px);
+}
+header{
+    width:100%;
+    height:pxTorem(44px);
+    border-bottom:1px solid #eee;
+    padding:0 pxTorem(20px);
+    display: flex;
+    align-items: center;
+    background: #efeff0;
+    #top__back {
+        display: block;
+        width: pxTorem(15px);
+        height: pxTorem(15px);
+        //background:red;
+        transform: rotateZ(45deg);
+        border-bottom:pxTorem(3px) solid #ccc;
+        border-left:pxTorem(3px) solid #ccc;
+    }
+}
+section{
+    flex:1;
+    overflow-y: scroll;
+    ul{
+        width:100%;
+        height:auto;
+        li{
+            width:100%;
+            height:pxTorem(40px);
+            line-height: pxTorem(40px);
+            padding-left:pxTorem(10px);
+            border-bottom:pxTorem(1px) solid #ccc;
+            position:relative;
+            span{
+                position: absolute;
+                top:0;
+                right:pxTorem(10px);
+                color:#6cb378;
+            }
+            &.active{
+                color:#F35D02;
+            }
+        }
+    }
+}

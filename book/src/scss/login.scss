@@ -1,0 +1,50 @@
+@import 'common.scss';
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width:100%;
+    height:100%;
+    font-size:pxTorem(16px);
+}
+header{
+    width:100%;
+    height:pxTorem(100px);
+    padding:0 pxTorem(30px);
+    padding-top:pxTorem(50px);
+    h3{
+        width:100%;
+        height:pxTorem(20px);
+        text-align: center;
+        line-height: pxTorem(20px);
+    }
+}
+.box{
+    width:100%;
+    height:auto;
+    padding:0 pxTorem(40px);
+    input{
+        width:100%;
+        height:pxTorem(40px);
+        border:none;
+        border-bottom:pxTorem(1px) solid #ccc;
+        margin-top:pxTorem(10px);
+    }
+    button{
+        width:100%;
+        height:pxTorem(40px);
+        color:#fff;
+        text-align: center;
+        line-height: pxTorem(40px);
+        background:#ff6700;
+        border-radius: pxTorem(10px);
+        border:none;
+        margin-top:pxTorem(20px);
+        font-size:pxTorem(16px);
+    }
+    .btn{
+        background: #fff;
+        border:pxTorem(1px) solid #ccc;
+        color:#000;
+    }
+}

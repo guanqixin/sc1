@@ -1,0 +1,21 @@
+<h4>重磅推荐<i>推</i></h4>
+<ul>
+    {{#each this}} {{#if @index}}
+    <li>
+        <span>{{@index}}</span>
+        <span>{{title}}</span>
+        <span>{{authors}}</span>
+    </li>
+    {{else}}
+    <li class='one1 two1'>
+        <dl>
+            <dt><img data-original="{{cover}}" class='img'></dt>
+            <dd>
+                <h6>{{title}}</h6>
+                <h5>{{authors}}</h5>
+                <p>{{summary}}</p>
+            </dd>
+        </dl>
+    </li>
+    {{/if}} {{/each}}
+</ul>

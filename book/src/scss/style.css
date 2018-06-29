@@ -1,0 +1,556 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font-family: STHeitiSC-Light;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+ol,
+ul li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+ins,
+a {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    display: inline-block;
+}
+
+input,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+}
+
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+
+html {
+    font-size: 37.5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.42667rem;
+}
+
+header {
+    width: 100%;
+    height: 1.17333rem;
+    background: #efeff0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 0 0.26667rem;
+}
+
+header div {
+    flex: 1;
+    display: flex;
+}
+
+header div span {
+    flex: 1;
+    padding: 0 0.66667rem;
+    line-height: 1.17333rem;
+    text-align: center;
+}
+
+header div span.active {
+    color: #ff6600;
+    border-bottom: 0.05333rem solid orange;
+}
+
+header p {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+header p:nth-of-type(2) em {
+    position: absolute;
+    top: 0;
+    right: -0.26667rem;
+    display: block;
+    width: 1.06667rem;
+    height: 100%;
+    background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01j041d5DOT/boUg2EJlVetOMC.png) no-repeat center;
+    background-size: 40% auto;
+}
+
+header p:nth-of-type(1) em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.17333rem;
+    height: 1.17333rem;
+    background-size: 0.58667rem;
+}
+
+#main {
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#main .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s;
+}
+
+#main .content #one {
+    height: auto;
+}
+
+#main .content .box3 {
+    height: auto;
+}
+
+#main .content .book {
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    overflow-y: scroll;
+}
+
+#main .content .book .server {
+    width: 100%;
+    height: 1.17333rem;
+    padding: 0.13333rem 0.53333rem;
+    border-bottom: 0.02667rem solid #ccc;
+}
+
+#main .content .book .server span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.37333rem;
+    color: rgba(0, 0, 0, 0.4);
+    background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01dSYLeWtSR/tY73MgTfVw7UAS.png) no-repeat 8px center;
+    background-size: 0.37333rem;
+    border: 0.02667rem solid #f5f5f5;
+    border-radius: 2px;
+    padding-left: 0.8rem;
+    padding-top: 0.16rem;
+}
+
+#main .content .book .shelf {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#main .content .book .shelf span {
+    width: 90%;
+}
+
+#main .content .book .shelf #tab {
+    width: 0.96rem;
+    height: pxorem(36px);
+    margin-left: 0.8rem;
+    border-radius: 0.10667rem;
+    background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01yLF3fEj8l/b7UfAdlfufQKML.png) no-repeat center;
+    background-size: 0.42667rem;
+    border: 1px solid #eee;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.list {
+    width: 100%;
+    height: 1.86667rem;
+    display: flex;
+    margin-bottom: 0.05333rem;
+    border-bottom: 0.26667rem solid #f5f5f5;
+}
+
+.list li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.37333rem;
+}
+
+.list li img {
+    width: 0.58667rem;
+    height: auto;
+    margin-bottom: 0.13333rem;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 0.02667rem solid #f0f0f0;
+    border-left: 0.16rem solid #ffab18;
+    padding: 0.26667rem;
+    font-size: 0.48rem;
+}
+
+.week-hot {
+    width: 100%;
+    height: auto;
+}
+
+.week-hot1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0.26667rem;
+    border-bottom: 0.26667rem solid #f5f5f5;
+}
+
+.week-hot1 dl {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.26667rem;
+}
+
+.week-hot1 dl dt img {
+    height: 3.46667rem;
+    display: block;
+}
+
+.week-hot1 dl dd {
+    margin-top: 0.26667rem;
+    font-size: 0.4rem;
+    height: 1.06667rem;
+    width: 100%;
+    padding: 0 0.26667rem;
+    color: #8d8d8d;
+}
+
+.look {
+    width: 100%;
+    border-top: 0.02667rem solid #f0f0f0;
+    text-align: center;
+    font-size: 0.37333rem;
+    padding: 0.26667rem 0;
+}
+
+.lin {
+    width: 100%;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    padding-left: 0.26667rem;
+    border-bottom: 0.02667rem solid #f0f0f0;
+}
+
+.heavy {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.26667rem solid #f5f5f5;
+}
+
+.heavy h4 {
+    width: 100%;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    padding-left: 0.26667rem;
+    border-bottom: 0.02667rem solid #f0f0f0;
+}
+
+.heavy h4 i {
+    font-size: 0.32rem;
+    color: #fff;
+    background: #53ac7d;
+    border-radius: 0.02667rem;
+    padding: 0 0.10667rem;
+    margin-left: 0.26667rem;
+    position: relative;
+    top: -0.10667rem;
+}
+
+.heavy ul {
+    width: 100%;
+    height: 9.33333rem;
+    overflow-y: hidden;
+    padding: 0 0.26667rem;
+    margin-top: 0.53333rem;
+}
+
+.heavy ul li {
+    width: 100%;
+    border-bottom: 0.02667rem solid #f0f0f0;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+}
+
+.heavy ul li span {
+    margin: 0 0.13333rem;
+}
+
+.heavy ul li span:nth-of-type(1) {
+    color: rgba(237, 83, 15, 0.9);
+}
+
+.heavy ul li span:nth-of-type(3) {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.37333rem;
+}
+
+.heavy .one1.two1 {
+    height: 3.73333rem;
+}
+
+.bottom {
+    width: 100%;
+    height: 1.17333rem;
+    display: flex;
+}
+
+.bottom div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom div:nth-of-type(1) {
+    border-right: 0.05333rem solid #f0f0f0;
+}
+
+.girl-book {
+    border-bottom: 0.26667rem solid #f5f5f5;
+}
+
+.load {
+    width: 100%;
+    height: 1.06667rem;
+    text-align: center;
+    line-height: 1.06667rem;
+}
+
+.one1.two1 {
+    width: 100%;
+    height: 4.8rem;
+    border-bottom: 0.02667rem solid #f0f0f0;
+}
+
+.one1.two1 dl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.one1.two1 dl dt {
+    flex: 3;
+    padding: 0 0.26667rem;
+}
+
+.one1.two1 dl dt img {
+    width: 100%;
+    height: auto;
+}
+
+.one1.two1 dl dd {
+    flex: 7;
+    padding: 0 0.26667rem;
+}
+
+.one1.two1 dl dd p {
+    height: 1.12rem;
+    overflow: hidden;
+    font-size: 0.32rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 0.53333rem;
+    margin: 0.13333rem 0;
+}
+
+.one1.two1 dl dd h5 {
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.one1.two1 dl dd h6 {
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    font-size: 0.48rem;
+}
+
+.li dl {
+    padding-top: 0.66667rem;
+}

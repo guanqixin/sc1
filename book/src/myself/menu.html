@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='../js/lib/require.js'></script>
+    <link rel="stylesheet" href="../scss/menu.css">
+    <script>
+        require(['../js/config'], function() {
+            require(['menu'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="javascript:history.back()" id="top__back"></a>
+            <div class="search-inp">
+                目录
+            </div>
+        </header>
+        <section class='con'>
+
+        </section>
+    </div>
+</body>
+
+</html>

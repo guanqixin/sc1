@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/word.css">
+    <script src='../js/lib/require.js'></script>
+    <script>
+        require(['../js/config'], function() {
+            require(['word'])
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="page">
+            <h3 class='title'></h3>
+            <div class="con">
+
+            </div>
+        </div>
+        <div class="she">
+            <header>
+                <a href="javascript:history.back()" id="top__back"></a>
+                <div class="search-inp">
+                    返回
+                </div>
+            </header>
+            <section></section>
+            <footer>
+                <div class="top">
+                    <span class='prev'>上一章</span>
+                    <p><i class='s'>1</i>/<i class='zon'></i></p>
+                    <span class='next'>下一章</span>
+                </div>
+                <div class="bottom">
+                    <div class="config-box">
+                        <div class="box-top">
+                            字号：<button>大</button><button>小</button>
+                        </div>
+                        <div class="box-color">
+                            背景：<span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <p>
+
+                        <span>目录</span>
+                    </p>
+                    <p>
+
+                        <span>字体</span>
+                    </p>
+                    <p>
+
+                        <span>夜间</span>
+                    </p>
+                    <p>
+
+                        <span>下载</span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
